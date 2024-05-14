@@ -1,0 +1,16 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "https://github.com/qudgus21/electron-test.git",
+  "devDependencies": {
+    "electron": "^30.0.4"
+  }
+}
