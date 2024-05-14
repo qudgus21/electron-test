@@ -5,12 +5,14 @@
   "main": "src/electron/main.js",
   "scripts": {
     "start": "electron .",
+    "electron-build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "repository": "https://github.com/qudgus21/electron-test.git",
   "devDependencies": {
-    "electron": "^30.0.4"
+    "electron": "^30.0.4",
+    "electron-builder": "^24.13.3"
   }
 }
