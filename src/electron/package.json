@@ -2,10 +2,10 @@
   "name": "electron-test",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
+    "start": "cross-env mode=dev electron .",
+    "build": "cross-env mode=production electron-builder"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,9 @@
   "devDependencies": {
     "electron": "^30.0.4",
     "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5"
   }
 }
