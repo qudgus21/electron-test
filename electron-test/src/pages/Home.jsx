@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
+import { Container, Button, Alert } from 'react-bootstrap';
 
 const HomePage = () => {
 
@@ -16,8 +17,10 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-    <div className='bg-red-500 h-[200px] text-[100px]'>Welcome {process.env.REACT_APP_HELLO}</div>
-  </div>
+      <Alert variant="success" className="mt-[10px]">
+        This is a success alert from React-Bootstrap3
+      </Alert>
+    </div>
   )
 };
 

@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = await import("electron");
+const { app, BrowserWindow, screen  } = await import("electron");
 const path = await import("path");
 const { fileURLToPath } = await import("url");
 const dotenv = await import("dotenv");
@@ -10,8 +10,8 @@ const createWindow = () => {
     const __dirname = path.dirname(__filename);
 
     const win = new BrowserWindow({
-        width: 2000,
-        height: 1500,
+        width: 1500,
+        height: 1050,
         webPreferences: {
             nodeIntegration: true,
             enableRemoteModule: true,
